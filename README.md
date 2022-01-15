@@ -1,4 +1,6 @@
-# Microsserviços Java com Spring Boot e Spring Cloud
+<h1 align="center">Microsserviços Java com Spring Boot e Spring Cloud</h1>
+
+>[Curso udemy](https://www.udemy.com/course/microsservicos-java-spring-cloud/) criado pelo magnífico professor [Nélio Alves.](https://www.linkedin.com/in/nelio-alves/)
 
 Esse projeto é um sistema composto por vários microsserviços que comunicam entre si de forma **transparente**, **escalável** e com **balanceamento de carga**.
 
@@ -35,6 +37,18 @@ Tem o objetivo de centralizar toda a configuração da nossa rede de Microservic
 
 Todos os arquivos de configuração do nosso sistema estarão em um repositório git e o Servidor de Configuração será o responsável por ler as informações no repositório e fornece-las às aplicações através de requests HTTP.
 
+![config-projeto](imagens/config-projeto.png)
+
+## 🎯 Dependências para rodar a aplicação
+
+- `Java 11`
+- `STS - Spring Tool Suite versão 2.3.x`
+- Docker / Docker Desktop
+
+> Obs: Algumas bibliotecas foram descontinuadas, então essa versão do sts é necessária para não gerar bugs.
+
+## Contatos:
+
 <div align="center">
   <a href="https://www.linkedin.com/in/gabriel-mendes-3a668917b/">
   <img height="25px" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
@@ -47,5 +61,5 @@ Todos os arquivos de configuração do nosso sistema estarão em um repositório
 ---
 
 <p align="center">
-Desenvolvid por Gabriel Souza.
+Desenvolvido por Gabriel Souza.
 </p>
