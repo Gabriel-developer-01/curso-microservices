@@ -8,6 +8,31 @@ Esse projeto é um sistema composto por vários microsserviços que comunicam en
 
 Para isso foi utilizado ferramentas do **Spring Cloud** como:
 
+### RestTemplate e OpenFeign
+RestTemplate é uma classe do Spring projetada para chamar serviços REST.
+
+Feign também é utilizado para integração com serviços REST. Foi arquitetado para permitir requisições de API entre microsserviços de forma simples. Além disso, tem suporte para trabalhar com outras bibliotecas como Hystrix, Eureka e Ribbon.
+
+Algumas vantagens que o OpenFeign tem sobre o RestTemplate:
+
+ <div align="left">
+  <ol>
+    <li>Não precisa escrever classes de implementação para chamar outros serviços, apenas fornecer especificação como uma Interface</li>
+    <li>As configurações do cliente, como codificação/decodificação, tempo limite, registro em log, podem ser feitas apenas por meio de arquivos de propriedades.</li>
+    <li>As configurações do cliente também podem ser feitas a partir do arquivo de configuração Java.</li>
+    <li>Tem um ótimo suporte para trabalhar com outras bibliotecas do Spring Cloud NetFlix como Hystrix, Eureka e Ribbon</li>
+    <li>Spring Boot fornece suporte para escrever casos de teste para Feign Client usando WireMock</li>
+    <li>Forneça suporte para dados de fallback se a chamada da API falhar.</li>
+  <ol>
+</div>
+    
+### Este é um mapa com os principais recursos atuais fornecidos pelo feign:
+    
+<img src="/imagens/feign.png" alt="OpenFeign">
+    
+[Spring Cloud OpenFeign](https://docs.spring.io/spring-cloud-openfeign/docs/current/reference/html/)<br/>
+[Integração de APIs com o OpenFeign](https://cwi.com.br/blog/integracao-de-apis-com-o-openfeign/)
+    
 ### Eureka
 O Eureka é um serviço REST que é usado para localizar serviços com o objetivo de balanceamento de carga. Ele permite que serviços sejam registrados através do Eureka Server e descobertos através do Eureka Client,
 
